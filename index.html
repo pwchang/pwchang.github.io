@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Your Name</h1>
+    <div class="container">
+        <!-- Sidebar with Profile and Navigation -->
+        <div class="sidebar">
+            <img src="images/your-photo.jpg" alt="Your Name" class="profile-photo">
             <nav>
                 <ul>
                     <li><a href="#about" class="tablinks" onclick="openTab(event, 'about')">About</a></li>
@@ -19,46 +20,38 @@
                 </ul>
             </nav>
         </div>
-    </header>
 
-    <div id="about" class="tabcontent">
-        <section class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <img src="images/headshot.jpg" alt="Profile Picture" class="profile-photo">
+        <!-- Main Content Area -->
+        <div class="content">
+            <div id="about" class="tabcontent">
+                <h2>About Me</h2>
                 <p>Write a brief introduction about yourself here.</p>
             </div>
-        </section>
-    </div>
 
-    <div id="portfolio" class="tabcontent" style="display:none;">
-        <section class="container">
-            <h2>Portfolio</h2>
-            <div class="grid">
-                <div class="grid-item">
-                    <h3>Project 1</h3>
-                    <p>A short description of your project.</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Project 2</h3>
-                    <p>A short description of your project.</p>
+            <div id="portfolio" class="tabcontent" style="display:none;">
+                <h2>Portfolio</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3>Project 1</h3>
+                        <p>A short description of your project.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Project 2</h3>
+                        <p>A short description of your project.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <div id="blog" class="tabcontent" style="display:none;">
-        <section class="container">
-            <h2>Blog</h2>
-            <p>Write and showcase some blog articles here.</p>
-        </section>
-    </div>
+            <div id="blog" class="tabcontent" style="display:none;">
+                <h2>Blog</h2>
+                <p>Write and showcase some blog articles here.</p>
+            </div>
 
-    <div id="contact" class="tabcontent" style="display:none;">
-        <section class="container">
-            <h2>Contact</h2>
-            <p>Contact me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-        </section>
+            <div id="contact" class="tabcontent" style="display:none;">
+                <h2>Contact</h2>
+                <p>Contact me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -84,4 +77,3 @@
     </script>
 </body>
 </html>
-
