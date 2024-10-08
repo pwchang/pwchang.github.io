@@ -8,64 +8,69 @@
 /* Set the background color */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F1F1D4; /* New background color */
+    background-color: #F1F1D4; /* Background color */
+    min-height: 100vh;
 }
 
-/* Container for Sidebar and Content */
-.container {
+/* Header section */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
     display: flex;
-    width: 100%;
-    height: 100vh;
-}
-
-/* Sidebar styling */
-.sidebar {
-    width: 25%;
-    background: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
-.sidebar img {
-    width: 150px;
-    height: 150px;
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-container h1 {
+    margin-left: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-right: 20px;
     border: 3px solid #ddd;
 }
 
-.sidebar nav ul {
+/* Navigation tabs */
+nav ul {
     list-style: none;
-    width: 100%;
-    text-align: center;
+    display: flex;
+    gap: 20px;
 }
 
-.sidebar nav ul li {
-    margin: 15px 0;
+nav ul li {
+    display: inline;
 }
 
-.sidebar nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    background-color: #444;
+    padding: 10px;
     border-radius: 5px;
+    background-color: #444;
 }
 
-.sidebar nav ul li a:hover,
-.tablinks.active {
+nav ul li a:hover, .tablinks.active {
     background-color: #575757;
 }
 
 /* Main content styling */
 .content {
-    width: 75%;
     padding: 20px;
+    margin-top: 20px;
 }
 
 /* Tab content */
@@ -97,4 +102,3 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
-
