@@ -53,7 +53,19 @@
 						<header class="major">
 							<h2>Bias Scanning</h2>
 						</header>
-						<p>In order to build these effective predictive models, we first need the tools to rapidly identify where things are going wrong</p>
+						<p>
+							In order to build fair predictive models, we first need to identify where the model is not
+							working well. A simple fairness approach would be to look at metrics such as calibration
+							and TPR for each demographic group. However, if we want to identify disparities for any
+							intersections of sensitive attributes, the search space grows exponentially.
+						</p>
+						<img  src="images/searchspace.png" width="300" height="300" ></img>
+						<p>
+							The algorithms I work on can efficiently search this space in linear or near linear time,
+							allowing for rapid identification of concern points in a machine learning model. While
+							I have primarily applied this in the fairness space, these methods can be readily adapted to
+							different risk, robustness, or accuracy concerns in machine learning.
+						</p>
 					</section>
 
 					<section id="pipeline">
@@ -61,7 +73,7 @@
 							<h2>Understanding Machine Learning Pipelines</h2>
 						</header>
 						<p>We also need the understanding of machine learning systems from a holistic perspective</p>
-						<img  src="images/pipeline.png" width="500" height="300" ></img>
+						<img  src="images/pipeline.png" width="550" height="300" ></img>
 					</section>
 
 					<section id="experience">
@@ -78,9 +90,6 @@
 						<p>Prior to working at Harvard, I was a data scientist at Thomson Reuters Special Services. There I led a project on identifying shell companies from public records data as well as founding the AI Ethics team. I also helped develop graph-based methods for identifying social media bots. Prior to that, I worked at the Johns Hopkins Applied Physics lab in their rotational program. I executed a broad range of data and modeling tasks in health care analytics, low-temperature physics modeling, and combat systems research.</p>
 						<p>I graduated from Harvard in 2018 after completing a dual degree program, receiving my bachelors degree in Physics and masters in Computational Science and Engineering. While I don't study physics anymore, I still enjoy talking about it!</p>
 						<h2>Links to some of my work!</h2>
-						<article class="col-6 col-12-small work-item">
-							<a href="images/fulls/fid.jpg" class="image fit thumb"><img src="images/thumbs/fid.jpg" alt="" /></a>
-							</article>
 						<ul class="actions">
 							<li><a href="https://github.com/pwchang/pwchang.github.io/blob/main/resume.pdf" class="button">Resume</a></li>
 						</ul>
